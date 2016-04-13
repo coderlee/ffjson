@@ -1,4 +1,5 @@
 摘抄自：https://journal.paul.querna.org/articles/2014/03/31/ffjson-faster-json-in-go/
+
 ffjson is a project I have been hacking on for making JSON serialization faster in the Go programing language. ffjson works by generating static code for Go's JSON serialization interfaces. Fast binary serialization frameworks like Cap'n Proto or Protobufs also use this approach of generating code. Because ffjson is serializing to JSON, it will never be as fast as some of these other tools, but it can beat the builtin encoding/json easily.
 
 Benchmarks
